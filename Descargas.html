@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .imgg {
+      position: relative;
+    }
+
+    .imgg img{
+      width: 100%;
+      height: 300px;
+    }
+
+    .imgg .img-text {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 4px #333;
+    }
+
+    .imgg .img-subtext {
+      position:absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 1.1em;
+      text-shadow: 2px 2px 4px #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .header {
+      background-color: #ffffff;
+      color: white;
+      text-align: left;
+      padding: 1rem;
+    }
+
+    .header h1 {
+      margin-left: 20px;
+    }
+
+    .header img {
+      max-height: 60px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .base {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .menu {
+      width: 100%;
+      text-align: center;
+      background-color: #ffffff;
+      padding: 0.5rem;
+    }
+
+    .menu a {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      display: inline-block;
+      color: rgb(148, 146, 146);
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: #e5e5e5; 
+    }
+
+    .right {
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .menu {
+        position: relative;
+      }
+
+      .menu a {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alpine_Linux.svg/1200px-Alpine_Linux.svg.png">
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Sobre nosotros.html">Sobre nosotros</a>
+    <a href="Comunidad.html">Comunidad</a>
+  </div>
+
+  <div class="imgg">
+    <img src="imagenes/imagen.jpg">
+    <div class="img-text">
+      <h1>Pequeño. Simple. Seguro</h1>
+    </div>
+    <div class="img-subtext">
+        <p>Alpine Linux es una distribución de Linux liviana y orientada a la seguridad basada en musl libc y Busybox.</p>
+    </div>
+  </div>
+
+  <div class="base">
+    <h1>DESCARGAS</h1>
+      <p>Versión más reciente de Alpine <b>3.19.0</b> (publicada el 07/23)</p><br>
+    <h2>VERSIÓN ESTÁNDAR</h2>
+      <p>Alpine como estaba previsto. Lo suficiente para empezar. Se requiere conexión de red.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-standard-3.19.0-aarch64.iso">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-standard-3.19.0-armv7.iso">armv7</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/ppc64le/alpine-standard-3.19.0-ppc64le.iso">ppc64le</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/s390x/alpine-standard-3.19.0-s390x.iso">s390x</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86/alpine-standard-3.19.0-x86.iso">x86</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-standard-3.19.0-x86_64.iso">x86_64</a><br>
+      </p><br>
+    <h2>VERSIÓN EXTENDIDA</h2>
+      <p>Paquetes usados ​​más comunes incluidos. Adecuado para enrutadores y servidores. Se ejecuta desde la RAM. Incluye actualizaciones de microcódigos AMD e Intel.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86/alpine-extended-3.19.0-x86.iso">x86</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-extended-3.19.0-x86_64.iso">x86_64</a><br> 
+      </p><br>
+
+    <h2>NETBOOT</h2>
+      <p>Kernel, initramfs y modloop para arranque de red.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-netboot-3.19.0-aarch64.tar.gz">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armhf/alpine-netboot-3.19.0-armhf.tar.gz">armhf</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-netboot-3.19.0-armv7.tar.gz">armv7</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/ppc64le/alpine-netboot-3.19.0-ppc64le.tar.gz">ppc64le</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/s390x/alpine-netboot-3.19.0-s390x.tar.gz">s390x</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86/alpine-netboot-3.19.0-x86.tar.gz">x86</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-netboot-3.19.0-x86_64.tar.gz">x86_64</a><br>
+      </p><br>
+    <h2>RASPBERRY PI</h2>
+      <p>Incluye el núcleo Raspberry Pi. Diseñado para RPI 1, 2, 3, 4 y 5 Y mucho más...</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-rpi-3.19.0-aarch64.tar.gz">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armhf/alpine-rpi-3.19.0-armhf.tar.gz">armhf</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-rpi-3.19.0-armv7.tar.gz">armv7</a><br>
+      </p><br>
+    <h2>GENERIC ARM</h2>
+      <p>Tiene kernel ARM predeterminado. Incluye el gestor de arranque uboot. Admite armv7 y aarch64.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-uboot-3.19.0-aarch64.tar.gz">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-uboot-3.19.0-armv7.tar.gz">armv7</a><br>
+      </p><br>
+    <h2>MINI ROOT FILESYSTEM</h2>
+      <p>Sistema de archivos raíz mínimo. Para uso en contenedores y chroots mínimos.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-minirootfs-3.19.0-aarch64.tar.gz">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armhf/alpine-minirootfs-3.19.0-armhf.tar.gz">armhf</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-minirootfs-3.19.0-armv7.tar.gz">armv7</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/ppc64le/alpine-minirootfs-3.19.0-ppc64le.tar.gz">ppc64le</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/s390x/alpine-minirootfs-3.19.0-s390x.tar.gz">s390x</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86/alpine-minirootfs-3.19.0-x86.tar.gz">x86</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-minirootfs-3.19.0-x86_64.tar.gz">x86_64</a><br>
+      </p><br>
+    <h2>VIRTUAL</h2>
+      <p>Similar al estándar. Núcleo adelgazado. Optimizado para sistemas virtuales.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/aarch64/alpine-virt-3.19.0-aarch64.iso">aarch64</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/armv7/alpine-virt-3.19.0-armv7.iso">armv7</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86/alpine-virt-3.19.0-x86.iso">x86</a><br>
+         Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.0-x86_64.iso">x86_64</a><br>
+      </p><br>
+    <h2>XÉN</h2>
+      <p>Soporte integrado para Xen Hypervisor. Incluye paquetes dirigidos al uso de Xen. Uso para Xen Dom0.</p>
+      <p>Descargar ➤ <a href="https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-xen-3.19.0-x86_64.iso">x86_64</a><br>
+  </div>
+
+  <footer style="text-align: center;background-color: #dadada; padding: 10px">
+    <p>Copyright 2023: Fet per Mario, Miguel i Sergio</p>
+  </footer>
+
+</body>
+</html>

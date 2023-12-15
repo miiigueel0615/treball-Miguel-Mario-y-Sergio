@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .imgg {
+      position: relative;
+    }
+
+    .imgg img{
+      width: 100%;
+      height: 300px;
+    }
+
+    .imgg .img-text {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 1.5em;
+      text-shadow: 2px 2px 4px #333;
+    }
+
+    .imgg .img-subtext {
+      position:absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 1.1em;
+      text-shadow: 2px 2px 4px #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .header {
+      background-color: #ffffff;
+      color: white;
+      text-align: left;
+      padding: 1rem;
+    }
+
+    .header h1 {
+      margin-left: 20px;
+    }
+
+    .header img {
+      max-height: 60px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+    .base {
+        margin-left: 20px;
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .menu {
+      width: 100%;
+      text-align: center;
+      background-color: #ffffff;
+      padding: 0.5rem;
+    }
+
+    .menu a {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      display: inline-block;
+      color: rgb(148, 146, 146);
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      background-color: #e5e5e5; 
+    }
+
+    .right {
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .menu {
+        position: relative;
+      }
+
+      .menu a {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alpine_Linux.svg/1200px-Alpine_Linux.svg.png">
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Comunidad.html">Comunidad</a>
+    <a href="Descargas.html">Descargas</a>
+  </div>
+
+  <div class="imgg">
+    <img src="imagenes/imagen.jpg">
+    <div class="img-text">
+      <h1>Pequeño. Simple. Seguro</h1>
+    </div>
+    <div class="img-subtext">
+        <p>Alpine Linux es una distribución de Linux liviana y orientada a la seguridad basada en musl libc y Busybox.</p>
+    </div>
+  </div>
+
+  <div class="base">
+    <h1>SOBRE NOSOTROS</h1>
+        <h2>PEQUEÑO</h2>
+            <p>Alpine Linux está construido alrededor de musl libc y Busybox. Esto lo hace pequeño y muy eficiente en recursos. Un contenedor no requiere más de 8 MB y una instalación mínima en disco requiere alrededor de 130 MB de almacenamiento. No sólo hacer obtienes un entorno Linux completo pero una gran selección de paquetes del repositorio.<br><br>Los paquetes binarios se reducen y dividen, lo que le brinda aún más control sobre lo que instala, lo que a su vez mantiene su entorno tan pequeño y lo más eficiente posible.</p>
+        <h2>SIMPLE</h2>
+            <p>Alpine Linux es una distribución muy sencilla que intentará mantenerse al margen a tu manera. Utiliza su propio administrador de paquetes llamado apk, el OpenRC init. sistema, configuraciones basadas en scripts y ¡listo! Esto le proporciona una Entorno Linux simple y nítido sin todo el ruido. Puede luego agregue encima solo los paquetes que necesita para su proyecto, así ya sea que se trate de construir un PVR doméstico o un controlador de almacenamiento iSCSI, un Contenedor de servidor de correo delgado como una oblea o un conmutador integrado sólido como una roca, nada más se interpondrá en el camino.</p>
+        <h2>SEGURO</h2>
+            <p>Alpine Linux fue diseñado pensando en la seguridad. Todos los binarios del área de usuario son compilado como ejecutables independientes de posición (PIE) con destrucción de pila proteccion. Estas características de seguridad proactivas evitan la explotación de todo clases de vulnerabilidades de día cero y otras.</p>
+  </div>
+
+  <footer style="text-align: center;background-color: #dadada; padding: 10px">
+    <p>Copyright 2023: Fet per Mario, Miguel i Sergio</p>
+  </footer>
+</body>
+</html>
